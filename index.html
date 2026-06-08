@@ -11,10 +11,13 @@
         font-family: system-ui, -apple-system, segoe UI, Roboto, Arial, sans-serif;
         background-color: #f4f4f4;
         margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
+        padding: 20px;
+        color: #333;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 30px;
       }
 
       h1 {
@@ -30,6 +33,11 @@
         font-weight: 400;
       }
 
+      main {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
       p {
         font-size: 14px;
         color: #333;
@@ -52,15 +60,6 @@
         margin-top: 20px;
       }
 
-      .card {
-        background: white;
-        padding: 30px;
-        width: 400px;
-        border-radius: 12px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      text-align: left;
-      }
-
       .section {
         margin-bottom: 24px;
       }
@@ -77,8 +76,20 @@
         letter-spacing: 1px;
       }
 
-      h1,h2 {
-        text-align: center;
+      section {
+        background: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      }
+
+      h3 {
+        font-size: 14px;
+        color: #111;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
       }
 
       a {
@@ -95,24 +106,32 @@
       a:hover {
         background: #333;
       }
+
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 12px;
+        color: #777;
+      }
       
     </style>
   </head>
   
   <body>
-    <div class="card">
-      
-    <h1>Maheen J</h1>
-    
-    <h2>Future Full Stack and AI Developer</h2>
-  <p>I am learning web development and AI automation</p>
 
-      <div class="section">
+    <header>  
+    <h1>Maheen J</h1>
+    <h2>Future Full Stack and AI Developer</h2>
+    </header>
+
+    <main>
+
+    <section>
     <h3>About Me</h3>
     <p>I am from Kochi and currently focusing on frontend development and AI tools.</p>
-      </div>
+    </section>
 
-      <div class="section">
+    <section> 
     <h3>My Goals</h3>
     <ul>
       <li>Learn HTML</li>
@@ -121,20 +140,27 @@
       <li>Build AI Projects</li>
       <li>Become a Full Stack Developer</li>
     </ul>
-      </div>
+    </section>
 
-      <div class="section">
+    <section>
     <h3>My hobbies</h3>
     <ul>
       <li>Gym</li>
       <li>Learning AI</li>
       <li>Building Websites</li>
     </ul>
-      </div>
-      <div class="section">
+    </section>
+
+    <section>
     <h3>Links</h3>
     <a href="https://maheen-j.github.io/portfolio-website" target="_blank">Visit My Portfolio</a>
-    </div>      
-    </div>
+    </section>
+
+    </main>
+
+    <footer>
+      <p>© 2026 Maheen J</p>
+    </footer>
+    
   </body>
 </html>
