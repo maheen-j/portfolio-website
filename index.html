@@ -167,6 +167,11 @@
         background: #f8f9fa;
         padding: 20px;
         border-radius: 10px;
+        transition: 0.3s;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
       }
 
       @media (max-width: 600px) {
@@ -174,6 +179,10 @@
         nav {
           flex-direction: column;
           gap: 15px;
+        }
+
+        .projects-grid {
+          grid-template-columns: 1fr;
         }
 
       }
