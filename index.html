@@ -345,13 +345,21 @@ textarea {
 
     </main>
 
+    <button id="change-title">
+      Change Title
+    </button>
+
     <footer>
       <p>© 2026 Maheen J</p>
     </footer>
 
     <script>
       let title = document.getElementById("title");
-      title.textContent = "Maheen The Developer";
+      let button = document.getElementById("change-title");
+      
+      button.onclick = function() {
+        title.textContent = "Maheen The Developer";
+      };
     </script>
     
   </body>
